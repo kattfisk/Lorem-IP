@@ -1,0 +1,14 @@
+services:
+  ipsum:
+    restart: always
+    build: ./ipsum
+    environment:
+      NODE_ENV: "production"
+      IPSUM_PORT: "3000"
+  load_balancer:
+    restart: always
+    build: ./load_balancer
+    ports:
+      - "80:80"
+    depends_on:
+      - ipsum

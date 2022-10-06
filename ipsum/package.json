@@ -1,0 +1,15 @@
+{
+  "name": "ipsum",
+  "version": "1.0.0",
+  "description": "Serves a static page with lorem ipsum",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "express": "^4.18.1",
+    "helmet": "^6.0.0"
+  }
+}
